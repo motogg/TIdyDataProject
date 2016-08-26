@@ -88,7 +88,7 @@ Data2= Data2[, lapply(.SD,mean), by = .(Activity,Subject)]
 Data2 = as.data.frame(Data2)
 
 # Write Second Data set to file
-write.csv(Data2, "TidyData.csv", row.names = F)
+write.table(Data2, "TidyData.txt", row.names = F)
 
 
 
